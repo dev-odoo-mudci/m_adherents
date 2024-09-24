@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View MUDCI localites View Tree -->
+    <record id="view_mudci_localites_tree" model="ir.ui.view">
+        <field name="name">view.mudci.localites.tree</field>
+        <field name="model">mudci.localites</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- <field name="id" string="ID"/> -->
+                <field name="loca_nom" string="Non localité"/>
+                <field name="loca_activation" string="Activation"/>
+                <field name="create_date" string="Date création"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View MUDCI localites form -->
+    <record id="view_mudci_localites_form" model="ir.ui.view">
+        <field name="name">view.mudci.localites.form</field>
+        <field name="model">mudci.localites</field>
+        <field name="arch" type="xml">
+            <form string="Localites">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="loca_nom" placeholder="Nom localité"/>
+                        </group>
+                        <group>
+                            <field name="loca_activation" string="Activation" widget="selection" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View MUDCI localites search -->
+    <record id="view_mudci_localites_search" model="ir.ui.view">
+        <field name="name">view.mudci.localites.search</field>
+        <field name="model">mudci.localites</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="loca_nom"/>
+                <field name="loca_activation"/>
+                <!-- <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Action MUDCI localites -->
+    <record id="action_mudci_localites" model="ir.actions.act_window">
+        <field name="name">Localités</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mudci.localites</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[]</field>
+        <field name="context">{}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_smiling_face">Aucun éléement dans la basé de données</p>
+            <p>Ajouter une localité</p>
+        </field>
+    </record>
+
+</odoo>

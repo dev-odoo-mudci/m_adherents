@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Localté 1 -->
+        <record id="localite_1" model="mudci.localites">
+            <field name="loca_nom">Abidjan</field>
+            <field name="loca_activation">oui</field>
+        </record>
+        <!-- Localté 2 -->
+        <record id="localite_2" model="mudci.localites">
+            <field name="loca_nom">Bouaké</field>
+            <field name="loca_activation">oui</field>
+        </record>
+        <!-- Localté 3 -->
+        <record id="localite_3" model="mudci.localites">
+            <field name="loca_nom">Korhogo</field>
+            <field name="loca_activation">oui</field>
+        </record>
+        <!-- Localté 4 -->
+        <record id="localite_4" model="mudci.localites">
+            <field name="loca_nom">Daloa</field>
+            <field name="loca_activation">non</field>
+        </record>
+        <!-- Localté 5 -->
+        <record id="localite_5" model="mudci.localites">
+            <field name="loca_nom">Yamoussoukro</field>
+            <field name="loca_activation">oui</field>
+        </record>
+        <!-- Localté 6 -->
+        <record id="localite_6" model="mudci.localites">
+            <field name="loca_nom">Man</field>
+            <field name="loca_activation">oui</field>
+        </record>
+        <!-- Localté 7 -->
+        <record id="localite_7" model="mudci.localites">
+            <field name="loca_nom">Odienné</field>
+            <field name="loca_activation">non</field>
+        </record>
+        <!-- Localté 8 -->
+        <record id="localite_8" model="mudci.localites">
+            <field name="loca_nom">Boundiali</field>
+            <field name="loca_activation">oui</field>
+        </record>
+        <!-- Localté 9 -->
+        <record id="localite_9" model="mudci.localites">
+            <field name="loca_nom">Bouaflé</field>
+            <field name="loca_activation">oui</field>
+        </record>
+        <!-- Localté 10 -->
+        <record id="localite_10" model="mudci.localites">
+            <field name="loca_nom">Grand-Bassam</field>
+            <field name="loca_activation">oui</field>
+        </record>
+
+
+
+        <!-- Bénéficiaire 1 -->
+        <record id="beneficiaire_1" model="mudci.beneficiaires">
+            <field name="bene_matricule">ED450LKH785DEO</field>
+            <field name="bene_nom">YAO</field>
+            <field name="bene_prenoms">Adingra</field>
+            <field name="bene_mobile1">07 54 87 56 48</field>
+            <field name="bene_mobile2">01 45 78 96 25</field>
+            <field name="bene_email">adingra@gmail.com</field>
+            <field name="bene_adresse">Cocody Saint Jean</field>
+            <field name="loca_id" ref="localite_1"></field>
+            <field name="bene_codeid">45786</field>
+            <field name="bene_dateadhesion">2002-07-17</field>
+            <field name="bene_statut">adherent</field>
+            <field name="bene_idadherent">0000001</field>
+            <field name="bene_datenaissance">2010-04-25</field>
+            <field name="bene_genre">masculin</field>
+            <field name="bene_lieunaissance">Dibikro</field>
+            <field name="bene_perscontact">05 54 48 45 45</field>
+            <field name="bene_boitepostal">BP 216 Yamoussaoukro</field>
+            <field name="bene_activation">oui</field>
+            <field name="bene_suspension">non</field>
+        </record>
+        <!-- Bénéficiaire 2 -->
+        <record id="beneficiaire_2" model="mudci.beneficiaires">
+            <field name="bene_matricule">ED450LKH785DEO</field>
+            <field name="bene_nom">KONE</field>
+            <field name="bene_prenoms">Baki</field>
+            <field name="bene_mobile1">07 00 87 56 48</field>
+            <field name="bene_mobile2">01 45 78 96 00</field>
+            <field name="bene_email">baki@gmail.com</field>
+            <field name="bene_adresse">Bakifla</field>
+            <field name="loca_id" ref="localite_2"></field>
+            <field name="bene_codeid">45786</field>
+            <field name="bene_dateadhesion">2002-07-17</field>
+            <field name="bene_statut">adherent</field>
+            <field name="bene_idadherent">0000001</field>
+            <field name="bene_datenaissance">2010-04-25</field>
+            <field name="bene_genre">masculin</field>
+            <field name="bene_lieunaissance">Dibikro</field>
+            <field name="bene_perscontact">05 54 48 45 45</field>
+            <field name="bene_boitepostal">BP 216 Yamoussaoukro</field>
+            <field name="bene_activation">oui</field>
+            <field name="bene_suspension">non</field>
+        </record>
+        <!-- Bénéficiaire 3 -->
+        <record id="beneficiaire_3" model="mudci.beneficiaires">
+            <field name="bene_matricule">ED451LKH785DEO</field>
+            <field name="bene_nom">BISSOUMA</field>
+            <field name="bene_prenoms">Ive</field>
+            <field name="bene_mobile1">07 01 87 56 48</field>
+            <field name="bene_mobile2">01 45 01 96 25</field>
+            <field name="bene_email">bossouma@gmail.com</field>
+            <field name="bene_adresse">Dropo</field>
+            <field name="loca_id" ref="localite_3"></field>
+            <field name="bene_codeid">45748</field>
+            <field name="bene_dateadhesion">2020-07-17</field>
+            <field name="bene_statut">adherent</field>
+            <field name="bene_idadherent">0000002</field>
+            <field name="bene_datenaissance">2010-04-25</field>
+            <field name="bene_genre">feminin</field>
+            <field name="bene_lieunaissance">Dibikro</field>
+            <field name="bene_perscontact">05 54 48 45 45</field>
+            <field name="bene_boitepostal">BP 511 Dropo</field>
+            <field name="bene_activation">oui</field>
+            <field name="bene_suspension">non</field>
+        </record>
+        <!-- Bénéficiaire 4 -->
+        <record id="beneficiaire_4" model="mudci.beneficiaires">
+            <field name="bene_matricule">ED452LKH785DEO</field>
+            <field name="bene_nom">Talou</field>
+            <field name="bene_prenoms">Adjoua Blé</field>
+            <field name="bene_mobile1">07 05 87 56 48</field>
+            <field name="bene_mobile2">01 85 78 96 25</field>
+            <field name="bene_email">adjouable@gmail.com</field>
+            <field name="bene_adresse">Adjouablekro</field>
+            <field name="loca_id" ref="localite_4"></field>
+            <field name="bene_codeid">45786</field>
+            <field name="bene_dateadhesion">2015-07-17</field>
+            <field name="bene_statut">enfant</field>
+            <field name="bene_idadherent">0000005</field>
+            <field name="bene_datenaissance">2008-04-25</field>
+            <field name="bene_genre">masculin</field>
+            <field name="bene_lieunaissance">Dibikro</field>
+            <field name="bene_perscontact">05 54 48 45 45</field>
+            <field name="bene_boitepostal">BP 584 Kro</field>
+            <field name="bene_activation">oui</field>
+            <field name="bene_suspension">non</field>
+        </record>
+        <!-- Bénéficiaire 5 -->
+        <record id="beneficiaire_5" model="mudci.beneficiaires">
+            <field name="bene_matricule">ED450LKH785DEO</field>
+            <field name="bene_nom">YAO</field>
+            <field name="bene_prenoms">Adingra</field>
+            <field name="bene_mobile1">07 54 87 56 48</field>
+            <field name="bene_mobile2">01 45 78 96 25</field>
+            <field name="bene_email">adingra@gmail.com</field>
+            <field name="bene_adresse">Cocody Saint Jean</field>
+            <field name="loca_id" ref="localite_5"></field>
+            <field name="bene_codeid">45786</field>
+            <field name="bene_dateadhesion">2002-07-17</field>
+            <field name="bene_statut">conjoint</field>
+            <field name="bene_idadherent">0000001</field>
+            <field name="bene_datenaissance">2010-04-25</field>
+            <field name="bene_genre">feminin</field>
+            <field name="bene_lieunaissance">Dibikro</field>
+            <field name="bene_perscontact">05 54 48 45 45</field>
+            <field name="bene_boitepostal">BP 216 Yamoussaoukro</field>
+            <field name="bene_activation">oui</field>
+            <field name="bene_suspension">non</field>
+        </record>
+
+
+
+        <!-- Police 1 -->
+        <record id="police_1" model="mudci.polices">
+            <field name="poli_code">PC001</field>
+            <field name="poli_standing">1</field>
+            <field name="poli_libelle">Police Santé Bronze</field>
+            <field name="poli_appdroitadh">adherent</field>
+            <field name="poli_droitadhesion">3000</field>
+            <field name="poli_periodicite">mensuelle</field>
+            <field name="poli_retardpaye">50</field>
+            <field name="poli_montant">12000</field>
+            <field name="poli_delaicarence">30</field>
+            <field name="poli_plafondind">100000</field>
+            <field name="poli_plafondfam">250000</field>
+            <field name="poli_tauxrembpublic">70</field>
+            <field name="poli_tauxrembprive">60</field>
+            <field name="poli_agelimiteadh">65</field>
+            <field name="poli_agelimiteconj">60</field>
+            <field name="poli_nbreconjoint">1</field>
+            <field name="poli_montantsupconj">2000</field>
+            <field name="poli_agelimiteenf">18</field>
+            <field name="poli_agemajorite">21</field>
+            <field name="poli_nbreenfants">2</field>
+            <field name="poli_montantsupenf">1500</field>
+            <field name="poli_enfantinvalide">non</field>
+            <field name="poli_nbremaxprescript">10</field>
+            <field name="poli_plafondprescript">15000</field>
+            <field name="poli_forfaitaccouch">3000</field>
+            <field name="poli_tauxprive">60</field>
+            <field name="poli_tauxpublic">70</field>
+            <field name="poli_seuilalerte">5</field>
+            <field name="poli_activation">oui</field>
+        </record>
+        <!-- Police 2 -->
+        <record id="police_2" model="mudci.polices">
+            <field name="poli_code">PC002</field>
+            <field name="poli_standing">2</field>
+            <field name="poli_libelle">Police Santé Argent</field>
+            <field name="poli_appdroitadh">assure</field>
+            <field name="poli_droitadhesion">5000</field>
+            <field name="poli_periodicite">trimestrielle</field>
+            <field name="poli_retardpaye">100</field>
+            <field name="poli_montant">18000</field>
+            <field name="poli_delaicarence">45</field>
+            <field name="poli_plafondind">150000</field>
+            <field name="poli_plafondfam">300000</field>
+            <field name="poli_tauxrembpublic">75</field>
+            <field name="poli_tauxrembprive">65</field>
+            <field name="poli_agelimiteadh">60</field>
+            <field name="poli_agelimiteconj">58</field>
+            <field name="poli_nbreconjoint">1</field>
+            <field name="poli_montantsupconj">2500</field>
+            <field name="poli_agelimiteenf">20</field>
+            <field name="poli_agemajorite">23</field>
+            <field name="poli_nbreenfants">3</field>
+            <field name="poli_montantsupenf">2000</field>
+            <field name="poli_enfantinvalide">oui</field>
+            <field name="poli_nbremaxprescript">12</field>
+            <field name="poli_plafondprescript">20000</field>
+            <field name="poli_forfaitaccouch">3500</field>
+            <field name="poli_tauxprive">70</field>
+            <field name="poli_tauxpublic">75</field>
+            <field name="poli_seuilalerte">8</field>
+            <field name="poli_activation">oui</field>
+        </record>
+        <!-- Police 3 -->
+        <record id="police_3" model="mudci.polices">
+            <field name="poli_code">PC003</field>
+            <field name="poli_standing">3</field>
+            <field name="poli_libelle">Police Santé Or</field>
+            <field name="poli_appdroitadh">adherent</field>
+            <field name="poli_droitadhesion">7000</field>
+            <field name="poli_periodicite">semestrielle</field>
+            <field name="poli_retardpaye">150</field>
+            <field name="poli_montant">24000</field>
+            <field name="poli_delaicarence">60</field>
+            <field name="poli_plafondind">200000</field>
+            <field name="poli_plafondfam">400000</field>
+            <field name="poli_tauxrembpublic">80</field>
+            <field name="poli_tauxrembprive">70</field>
+            <field name="poli_agelimiteadh">65</field>
+            <field name="poli_agelimiteconj">60</field>
+            <field name="poli_nbreconjoint">2</field>
+            <field name="poli_montantsupconj">3000</field>
+            <field name="poli_agelimiteenf">21</field>
+            <field name="poli_agemajorite">25</field>
+            <field name="poli_nbreenfants">4</field>
+            <field name="poli_montantsupenf">2500</field>
+            <field name="poli_enfantinvalide">non</field>
+            <field name="poli_nbremaxprescript">15</field>
+            <field name="poli_plafondprescript">25000</field>
+            <field name="poli_forfaitaccouch">4000</field>
+            <field name="poli_tauxprive">75</field>
+            <field name="poli_tauxpublic">80</field>
+            <field name="poli_seuilalerte">10</field>
+            <field name="poli_activation">oui</field>
+        </record>
+        <!-- Police 4 -->
+        <record id="police_4" model="mudci.polices">
+            <field name="poli_code">PC004</field>
+            <field name="poli_standing">4</field>
+            <field name="poli_libelle">Police Santé Platine</field>
+            <field name="poli_appdroitadh">assure</field>
+            <field name="poli_droitadhesion">10000</field>
+            <field name="poli_periodicite">annuelle</field>
+            <field name="poli_retardpaye">200</field>
+            <field name="poli_montant">30000</field>
+            <field name="poli_delaicarence">90</field>
+            <field name="poli_plafondind">300000</field>
+            <field name="poli_plafondfam">600000</field>
+            <field name="poli_tauxrembpublic">85</field>
+            <field name="poli_tauxrembprive">75</field>
+            <field name="poli_agelimiteadh">68</field>
+            <field name="poli_agelimiteconj">62</field>
+            <field name="poli_nbreconjoint">2</field>
+            <field name="poli_montantsupconj">4000</field>
+            <field name="poli_agelimiteenf">22</field>
+            <field name="poli_agemajorite">26</field>
+            <field name="poli_nbreenfants">5</field>
+            <field name="poli_montantsupenf">3000</field>
+            <field name="poli_enfantinvalide">oui</field>
+            <field name="poli_nbremaxprescript">20</field>
+            <field name="poli_plafondprescript">30000</field>
+            <field name="poli_forfaitaccouch">5000</field>
+            <field name="poli_tauxprive">80</field>
+            <field name="poli_tauxpublic">85</field>
+            <field name="poli_seuilalerte">12</field>
+            <field name="poli_activation">oui</field>
+        </record>
+        <!-- Police 5 -->
+        <record id="police_5" model="mudci.polices">
+            <field name="poli_code">PC005</field>
+            <field name="poli_standing">5</field>
+            <field name="poli_libelle">Police Santé Diamant</field>
+            <field name="poli_appdroitadh">adherent</field>
+            <field name="poli_droitadhesion">12000</field>
+            <field name="poli_periodicite">mensuelle</field>
+            <field name="poli_retardpaye">250</field>
+            <field name="poli_montant">40000</field>
+            <field name="poli_delaicarence">120</field>
+            <field name="poli_plafondind">400000</field>
+            <field name="poli_plafondfam">800000</field>
+            <field name="poli_tauxrembpublic">90</field>
+            <field name="poli_tauxrembprive">85</field>
+            <field name="poli_agelimiteadh">70</field>
+            <field name="poli_agelimiteconj">65</field>
+            <field name="poli_nbreconjoint">3</field>
+            <field name="poli_montantsupconj">5000</field>
+            <field name="poli_agelimiteenf">25</field>
+            <field name="poli_agemajorite">30</field>
+            <field name="poli_nbreenfants">6</field>
+            <field name="poli_montantsupenf">3500</field>
+            <field name="poli_enfantinvalide">non</field>
+            <field name="poli_nbremaxprescript">25</field>
+            <field name="poli_plafondprescript">35000</field>
+            <field name="poli_forfaitaccouch">6000</field>
+            <field name="poli_tauxprive">85</field>
+            <field name="poli_tauxpublic">90</field>
+            <field name="poli_seuilalerte">15</field>
+            <field name="poli_activation">oui</field>
+        </record>
+
+
+
+        <!-- Contrat 1 -->
+        <record id="contrat_1" model="mudci.contrats">
+            <field name="bene_id" ref="beneficiaire_1"/>
+            <field name="poli_code" ref="police_1"/>
+            <field name="cont_montant">50000</field>
+            <field name="cont_surprime">1000</field>
+            <field name="cont_ristourne">500</field>
+            <field name="cont_datedebut">2024-01-01</field>
+            <field name="cont_datefin">2025-01-01</field>
+            <field name="cont_periodicite">annuelle</field>
+            <field name="cont_delaicarence">30</field>
+            <field name="cont_retardpaye">0</field>
+            <field name="cont_activation">oui</field>
+        </record>
+        <!-- Contrat 2 -->
+        <record id="contrat_2" model="mudci.contrats">
+            <field name="bene_id" ref="beneficiaire_2"/>
+            <field name="poli_code" ref="police_2"/>
+            <field name="cont_montant">75000</field>
+            <field name="cont_surprime">1500</field>
+            <field name="cont_ristourne">700</field>
+            <field name="cont_datedebut">2024-02-01</field>
+            <field name="cont_datefin">2025-02-01</field>
+            <field name="cont_periodicite">mensuelle</field>
+            <field name="cont_delaicarence">45</field>
+            <field name="cont_retardpaye">2000</field>
+            <field name="cont_activation">non</field>
+        </record>
+        <!-- Contrat 3 -->
+        <record id="contrat_3" model="mudci.contrats">
+            <field name="bene_id" ref="beneficiaire_3"/>
+            <field name="poli_code" ref="police_3"/>
+            <field name="cont_montant">75000</field>
+            <field name="cont_surprime">1500</field>
+            <field name="cont_ristourne">700</field>
+            <field name="cont_datedebut">2024-02-01</field>
+            <field name="cont_datefin">2025-02-01</field>
+            <field name="cont_periodicite">trimestrielle</field>
+            <field name="cont_delaicarence">45</field>
+            <field name="cont_retardpaye">2000</field>
+            <field name="cont_activation">oui</field>
+        </record>
+        <!-- Contrat 4 -->
+        <record id="contrat_4" model="mudci.contrats">
+            <field name="bene_id" ref="beneficiaire_4"/>
+            <field name="poli_code" ref="police_4"/>
+            <field name="cont_montant">75000</field>
+            <field name="cont_surprime">1500</field>
+            <field name="cont_ristourne">700</field>
+            <field name="cont_datedebut">2024-02-01</field>
+            <field name="cont_datefin">2025-07-08</field>
+            <field name="cont_periodicite">semestrielle</field>
+            <field name="cont_delaicarence">45</field>
+            <field name="cont_retardpaye">2000</field>
+            <field name="cont_activation">non</field>
+        </record>
+        <!-- Contrat 5 -->
+        <record id="contrat_5" model="mudci.contrats">
+            <field name="bene_id" ref="beneficiaire_4"/>
+            <field name="poli_code" ref="police_5"/>
+            <field name="cont_montant">75000</field>
+            <field name="cont_surprime">1500</field>
+            <field name="cont_ristourne">700</field>
+            <field name="cont_datedebut">2024-02-01</field>
+            <field name="cont_datefin">2025-07-08</field>
+            <field name="cont_periodicite">semestrielle</field>
+            <field name="cont_delaicarence">45</field>
+            <field name="cont_retardpaye">2000</field>
+            <field name="cont_activation">non</field>
+        </record>
+
+
+
+        <!-- Enfant scolarisé 1 -->
+        <record id="scolarise_1" model="mudci.scolarises">
+            <field name="bene_id" ref="beneficiaire_1"/>
+            <field name="scol_datedebut">2021-09-01</field>
+            <field name="scol_datefin">2024-06-30</field>
+            <field name="scol_activation">oui</field>
+        </record>
+        <!-- Enfant scolarisé 2 -->
+        <record id="scolarise_2" model="mudci.scolarises">
+            <field name="bene_id" ref="beneficiaire_2"/>
+            <field name="scol_datedebut">2022-09-01</field>
+            <field name="scol_datefin">2025-06-30</field>
+            <field name="scol_activation">non</field>
+        </record>
+        <!-- Enfant scolarisé 3 -->
+        <record id="scolarise_3" model="mudci.scolarises">
+            <field name="bene_id" ref="beneficiaire_3"/>
+            <field name="scol_datedebut">2020-09-01</field>
+            <field name="scol_datefin">2023-06-30</field>
+            <field name="scol_activation">oui</field>
+        </record>
+        <!-- Enfant scolarisé 4 -->
+        <record id="scolarise_4" model="mudci.scolarises">
+            <field name="bene_id" ref="beneficiaire_4"/>
+            <field name="scol_datedebut">2023-09-01</field>
+            <field name="scol_datefin">2026-06-30</field>
+            <field name="scol_activation">oui</field>
+        </record>
+        <!-- Enfant scolarisé 5 -->
+        <record id="scolarise_5" model="mudci.scolarises">
+            <field name="bene_id" ref="beneficiaire_5"/>
+            <field name="scol_datedebut">2021-01-15</field>
+            <field name="scol_datefin">2023-12-15</field>
+            <field name="scol_activation">non</field>
+        </record>
+
+
+
+        <!-- Ayant droit handicapé 1 -->
+        <record id="handicape_1" model="mudci.handicapes">
+            <field name="bene_id" ref="beneficiaire_1"/>
+            <field name="hand_activation">oui</field>
+        </record>
+        <!-- Ayant droit handicapé 2 -->
+        <record id="handicape_2" model="mudci.handicapes">
+            <field name="bene_id" ref="beneficiaire_2"/>
+            <field name="hand_activation">non</field>
+        </record>
+        <!-- Ayant droit handicapé 3 -->
+        <record id="handicape_3" model="mudci.handicapes">
+            <field name="bene_id" ref="beneficiaire_3"/>
+            <field name="hand_activation">oui</field>
+        </record>
+        <!-- Ayant droit handicapé 4 -->
+        <record id="handicape_4" model="mudci.handicapes">
+            <field name="bene_id" ref="beneficiaire_4"/>
+            <field name="hand_activation">oui</field>
+        </record>
+        <!-- Ayant droit handicapé 5 -->
+        <record id="handicape_5" model="mudci.handicapes">
+            <field name="bene_id" ref="beneficiaire_5"/>
+            <field name="hand_activation">non</field>
+        </record>
+
+
+
+        <!-- Résiliation 1 -->
+        <record id="resiliation_1" model="mudci.resiliations">
+            <field name="cont_id" ref="contrat_1"/>
+            <field name="resi_motif">Changement de fournisseur</field>
+            <field name="resi_dateresiliat">2024-01-15</field>
+        </record>
+        <!-- Résiliation 2 -->
+        <record id="resiliation_2" model="mudci.resiliations">
+            <field name="cont_id" ref="contrat_2"/>
+            <field name="resi_motif">Non-paiement des cotisations</field>
+            <field name="resi_dateresiliat">2024-02-10</field>
+        </record>
+        <!-- Résiliation 3 -->
+        <record id="resiliation_3" model="mudci.resiliations">
+            <field name="cont_id" ref="contrat_3"/>
+            <field name="resi_motif">Changement d'adresse</field>
+            <field name="resi_dateresiliat">2024-03-01</field>
+        </record>
+        <!-- Résiliation 4 -->
+        <record id="resiliation_4" model="mudci.resiliations">
+            <field name="cont_id" ref="contrat_4"/>
+            <field name="resi_motif">Décès du titulaire</field>
+            <field name="resi_dateresiliat">2024-04-10</field>
+        </record>
+        <!-- Résiliation 5 -->
+        <record id="resiliation_5" model="mudci.resiliations">
+            <field name="cont_id" ref="contrat_5"/>
+            <field name="resi_motif">Fusion avec une autre entreprise</field>
+            <field name="resi_dateresiliat">2024-05-05</field>
+        </record>
+
+
+
+        <!-- Rétrait 1 -->
+        <record id="retrait_1" model="mudci.retraits">
+            <field name="bene_id" ref="beneficiaire_1"/>
+            <field name="retr_motif">Retrait pour non-conformité des documents</field>
+            <field name="retr_dateretrait">2024-01-15</field>
+        </record>
+        <!-- Rétrait 2 -->
+        <record id="retrait_2" model="mudci.retraits">
+            <field name="bene_id" ref="beneficiaire_2"/>
+            <field name="retr_motif">Retrait pour cause de décès</field>
+            <field name="retr_dateretrait">2024-02-10</field>
+        </record>
+        <!-- Rétrait 3 -->
+        <record id="retrait_3" model="mudci.retraits">
+            <field name="bene_id" ref="beneficiaire_3"/>
+            <field name="retr_motif">Retrait suite à une décision administrative</field>
+            <field name="retr_dateretrait">2024-03-01</field>
+        </record>
+        <!-- Rétrait 4 -->
+        <record id="retrait_4" model="mudci.retraits">
+            <field name="bene_id" ref="beneficiaire_4"/>
+            <field name="retr_motif">Retrait pour non-paiement des cotisations</field>
+            <field name="retr_dateretrait">2024-04-10</field>
+        </record>
+        <!-- Rétrait 5 -->
+        <record id="retrait_5" model="mudci.retraits">
+            <field name="bene_id" ref="beneficiaire_5"/>
+            <field name="retr_motif">Retrait suite à la demande du bénéficiaire</field>
+            <field name="retr_dateretrait">2024-05-05</field>
+        </record>
+        <!-- Rétrait 6 -->
+        <record id="retrait_6" model="mudci.retraits">
+            <field name="bene_id" ref="beneficiaire_1"/>
+            <field name="retr_motif">Départ volontaire</field>
+            <field name="retr_dateretrait">2024-01-15</field>
+        </record>
+        <!-- Rétrait 7 -->
+        <record id="retrait_7" model="mudci.retraits">
+            <field name="bene_id" ref="beneficiaire_2"/>
+            <field name="retr_motif">Changement de situation familiale</field>
+            <field name="retr_dateretrait">2024-02-20</field>
+        </record>
+        <!-- Rétrait 8 -->
+        <record id="retrait_8" model="mudci.retraits">
+            <field name="bene_id" ref="beneficiaire_3"/>
+            <field name="retr_motif">Problèmes financiers</field>
+            <field name="retr_dateretrait">2024-03-10</field>
+        </record>
+        <!-- Rétrait 9 -->
+        <record id="retrait_9" model="mudci.retraits">
+            <field name="bene_id" ref="beneficiaire_4"/>
+            <field name="retr_motif">Déménagement à l'étranger</field>
+            <field name="retr_dateretrait">2024-04-05</field>
+        </record>
+        <!-- Rétrait 10 -->
+        <record id="retrait_10" model="mudci.retraits">
+            <field name="bene_id" ref="beneficiaire_5"/>
+            <field name="retr_motif">Changement de régime d'assurance</field>
+            <field name="retr_dateretrait">2024-05-15</field>
+        </record>
+
+
+
+        <!-- Suspension 1 -->
+        <record id="suspension_1" model="mudci.suspensions">
+            <field name="cont_id" ref="contrat_1"/>
+            <field name="bene_id" ref="beneficiaire_1"/>
+            <field name="susp_motif">Non-paiement des cotisations</field>
+            <field name="susp_debut">2024-01-01</field>
+            <field name="susp_fin">2024-03-01</field>
+            <field name="susp_statut">encours</field>
+        </record>
+        <!-- Suspension 2 -->
+        <record id="suspension_2" model="mudci.suspensions">
+            <field name="cont_id" ref="contrat_2"/>
+            <field name="bene_id" ref="beneficiaire_2"/>
+            <field name="susp_motif">Non-justification de situation</field>
+            <field name="susp_debut">2024-02-01</field>
+            <field name="susp_fin">2024-04-01</field>
+            <field name="susp_statut">levee</field>
+        </record>
+        <!-- Suspension 3 -->
+        <record id="suspension_3" model="mudci.suspensions">
+            <field name="cont_id" ref="contrat_3"/>
+            <field name="bene_id" ref="beneficiaire_3"/>
+            <field name="susp_motif">Suspicion de fraude</field>
+            <field name="susp_debut">2024-03-10</field>
+            <field name="susp_fin">2024-05-10</field>
+            <field name="susp_statut">encours</field>
+        </record>
+        <!-- Suspension 4 -->
+        <record id="suspension_4" model="mudci.suspensions">
+            <field name="cont_id" ref="contrat_4"/>
+            <field name="bene_id" ref="beneficiaire_4"/>
+            <field name="susp_motif">Déménagement à l'étranger</field>
+            <field name="susp_debut">2024-04-15</field>
+            <field name="susp_fin">2024-06-15</field>
+            <field name="susp_statut">levee</field>
+        </record>
+        <!-- Suspension 5 -->
+        <record id="suspension_5" model="mudci.suspensions">
+            <field name="cont_id" ref="contrat_5"/>
+            <field name="bene_id" ref="beneficiaire_5"/>
+            <field name="susp_motif">Refus de mise à jour des informations</field>
+            <field name="susp_debut">2024-05-01</field>
+            <field name="susp_fin">2024-07-01</field>
+            <field name="susp_statut">encours</field>
+        </record>
+
+
+        <!-- Levée de suspension 1 -->
+        <record id="leveesuspens_1" model="mudci.leveesuspens">
+            <field name="susp_id" ref="suspension_1"/>
+            <field name="lesu_observation">Paiement régularisé</field>
+        </record>
+        <!-- Levée de suspension 2 -->
+        <record id="leveesuspens_2" model="mudci.leveesuspens">
+            <field name="susp_id" ref="suspension_2"/>
+            <field name="lesu_observation">Justification de situation reçue</field>
+        </record>
+        <!-- Levée de suspension 3 -->
+        <record id="leveesuspens_3" model="mudci.leveesuspens">
+            <field name="susp_id" ref="suspension_3"/>
+            <field name="lesu_observation">Fraude non avérée</field>
+        </record>
+        <!-- Levée de suspension 4 -->
+        <record id="leveesuspens_4" model="mudci.leveesuspens">
+            <field name="susp_id" ref="suspension_4"/>
+            <field name="lesu_observation">Retour en France</field>
+        </record>
+        <!-- Levée de suspension 5 -->
+        <record id="leveesuspens_5" model="mudci.leveesuspens">
+            <field name="susp_id" ref="suspension_5"/>
+            <field name="lesu_observation">Mise à jour des informations effectuée</field>
+        </record>
+    </data>
+</odoo>

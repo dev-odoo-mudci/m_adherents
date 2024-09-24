@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View MUDCI scolarises View Tree -->
+    <record id="view_mudci_scolarises_tree" model="ir.ui.view">
+        <field name="name">view.mudci.scolarises.tree</field>
+        <field name="model">mudci.scolarises</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="bene_id" string="Bénéficiaire"/>
+                <field name="scol_datedebut" string="Date de début"/>
+                <field name="scol_datefin" string="Date de fin"/>
+                <field name="scol_activation" string="Activation"/>
+                <field name="create_date" string="Date création"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View MUDCI scolarises form -->
+    <record id="view_mudci_scolarises_form" model="ir.ui.view">
+        <field name="name">view.mudci.scolarises.form</field>
+        <field name="model">mudci.scolarises</field>
+        <field name="arch" type="xml">
+            <form string="Scolarisés">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="bene_id" string="Bénéficiaire"/>
+                            <field name="scol_datedebut" string="Date de début"/>
+                        </group>
+                        <group>
+                            <field name="scol_datefin" string="Date de fin"/>
+                            <field name="scol_activation" string="Activation"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View MUDCI scolarises search -->
+    <record id="view_mudci_scolarises_search" model="ir.ui.view">
+        <field name="name">view.mudci.scolarises.search</field>
+        <field name="model">mudci.scolarises</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="bene_id" string="Bénéficiaire"/>
+                <field name="scol_datedebut" string="Date de début"/>
+                <field name="scol_datefin" string="Date de fin"/>
+                <field name="scol_activation" string="Activation"/>
+                <field name="create_date" string="Date création"/>
+                <!-- <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Action MUDCI scolarises -->
+    <record id="action_mudci_scolarises" model="ir.actions.act_window">
+        <field name="name">Ayants droit scolarisés</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mudci.scolarises</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[]</field>
+        <field name="context">{}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_smiling_face">Aucun éléement dans la basé de données</p>
+            <p>Ajouter un ayants droit enfants majeur scolarisé</p>
+        </field>
+    </record>
+
+</odoo>

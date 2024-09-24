@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- LOCALITES -->
+    <record id="localite_1" model="mudci.localites">
+        <field name="loca_nom">Abidjan</field>
+        <field name="loca_activation">oui</field>
+    </record>
+    <record id="localite_2" model="mudci.localites">
+        <field name="loca_nom">Bouaké</field>
+        <field name="loca_activation">oui</field>
+    </record>
+    <record id="localite_3" model="mudci.localites">
+        <field name="loca_nom">Korhogo</field>
+        <field name="loca_activation">oui</field>
+    </record>
+    <record id="localite_4" model="mudci.localites">
+        <field name="loca_nom">Daloa</field>
+        <field name="loca_activation">non</field>
+    </record>
+    <record id="localite_5" model="mudci.localites">
+        <field name="loca_nom">Yamoussoukro</field>
+        <field name="loca_activation">oui</field>
+    </record>
+    <record id="localite_6" model="mudci.localites">
+        <field name="loca_nom">Man</field>
+        <field name="loca_activation">oui</field>
+    </record>
+    <record id="localite_7" model="mudci.localites">
+        <field name="loca_nom">Odienné</field>
+        <field name="loca_activation">non</field>
+    </record>
+    <record id="localite_8" model="mudci.localites">
+        <field name="loca_nom">Boundiali</field>
+        <field name="loca_activation">oui</field>
+    </record>
+    <record id="localite_9" model="mudci.localites">
+        <field name="loca_nom">Bouaflé</field>
+        <field name="loca_activation">oui</field>
+    </record>
+    <record id="localite_10" model="mudci.localites">
+        <field name="loca_nom">Grand-Bassam</field>
+        <field name="loca_activation">oui</field>
+    </record>
+
+    <!-- BENEFICIAIRE -->
+    <record id="beneficiaire_1" model="mudci.beneficiaires">
+        <field name="bene_matricule">ED450LKH785DEO</field>
+        <field name="bene_nom">YAO</field>
+        <field name="bene_prenoms">Adingra</field>
+        <field name="bene_mobile1">07 54 87 56 48</field>
+        <field name="bene_mobile2">01 45 78 96 25</field>
+        <field name="bene_email">adingra@gmail.com</field>
+        <field name="bene_adresse">Cocody Saint Jean</field>
+        <field name="loca_id" ref="localite_1"></field>
+        <field name="bene_codeid">45786</field>
+        <field name="bene_dateadhesion">17/072002</field>
+        <field name="bene_statut">adherent</field>
+        <field name="bene_idadherent">0000001</field>
+        <field name="bene_datenaissance">25/04/2010</field>
+        <field name="bene_genre">masculin</field>
+        <field name="bene_lieunaissance">Dibikro</field>
+        <field name="bene_perscontact">05 54 48 45 45</field>
+        <field name="bene_boitepostal">BP 216 Yamoussaoukro</field>
+        <field name="bene_activation">oui</field>
+        <field name="bene_suspension">non</field>
+    </record>
+</odoo>

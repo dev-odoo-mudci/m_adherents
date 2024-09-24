@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View MUDCI polices View Tree -->
+    <record id="view_mudci_polices_tree" model="ir.ui.view">
+        <field name="name">view.mudci.polices.tree</field>
+        <field name="model">mudci.polices</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="poli_code" string="Code"/>
+				<field name="poli_standing" string="Standing"/>
+                <field name="poli_libelle" string="Libellé"/>
+                <!-- <field name="poli_appdroitadh" string="Applicabilité droit adhérent"/> -->
+                <field name="poli_droitadhesion" string="Droit adhésion"/>
+                <field name="poli_periodicite" string="Périodicité"/>
+                <!-- <field name="poli_retardpaye" string="Retard de payement"/> -->
+                <field name="poli_montant" string="Montant"/>
+                <field name="poli_delaicarence" string="Délai de carence"/>
+                <!-- <field name="poli_plafondind" string="Plafond/Individu"/>
+                <field name="poli_plafondfam" string="Plafond/famille"/>
+                <field name="poli_tauxrembpublic" string="Taux de remboursement au public"/>
+                <field name="poli_tauxrembprive" string="Taux de remboursement au privé"/>
+                <field name="poli_agelimiteadh" string="Âge limite adhérent"/>
+                <field name="poli_agelimiteconj" string="Âge limite conjoint"/>
+                <field name="poli_nbreconjoint" string="Nombre de conjoint"/>
+                <field name="poli_montantsupconj" string="Montant supplémentaire conjoint"/>
+                <field name="poli_agelimiteenf" string="Âge limite enfant"/>
+                <field name="poli_agemajorite" string="Âge de la majorité"/>
+                <field name="poli_nbreenfants" string="Nombre d'enfants"/>
+                <field name="poli_montantsupenf" string="Montant supplémentaire enfant"/>
+                <field name="poli_enfantinvalide" string="Enfant invalide"/>
+                <field name="poli_nbremaxprescript" string="Nombre maximum de prescriptions"/>
+                <field name="poli_plafondprescript" string="Plafond prescription"/>
+                <field name="poli_forfaitaccouch" string="Forfait accouchement"/>
+                <field name="poli_tauxprive" string="Taux privé"/>
+                <field name="poli_tauxpublic" string="Taux public"/>
+                <field name="poli_seuilalerte" string="Seuil d'alerte"/>
+                <field name="poli_activation" string="Activation"/> -->
+                <field name="create_date" string="Date création"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View MUDCI polices form -->
+    <record id="view_mudci_polices_form" model="ir.ui.view">
+        <field name="name">view.mudci.polices.form</field>
+        <field name="model">mudci.polices</field>
+        <field name="arch" type="xml">
+            <form string="Polices">
+                <sheet>
+                    <group>
+                        <field name="poli_code" string="Code"/>
+                        <field name="poli_standing" string="Standing"/>
+                        <field name="poli_libelle" string="Libellé"/>
+                        <field name="poli_appdroitadh" string="Applicabilité droit adhérent"/>
+                        <field name="poli_droitadhesion" string="Droit adhésion"/>
+                        <field name="poli_periodicite" string="Périodicité"/>
+                        <field name="poli_retardpaye" string="Retard de payement"/>
+                        <field name="poli_montant" string="Montant"/>
+                        <field name="poli_delaicarence" string="Délai de carence"/>
+                        <field name="poli_plafondind" string="Plafond/Individu"/>
+                        <field name="poli_plafondfam" string="Plafond/famille"/>
+                        <field name="poli_tauxrembpublic" string="Taux de remboursement au public"/>
+                        <field name="poli_tauxrembprive" string="Taux de remboursement au privé"/>
+                        <field name="poli_agelimiteadh" string="Âge limite adhérent"/>
+                        <field name="poli_agelimiteconj" string="Âge limite conjoint"/>
+                        <field name="poli_nbreconjoint" string="Nombre de conjoint"/>
+                        <field name="poli_montantsupconj" string="Montant supplémentaire conjoint"/>
+                        <field name="poli_agelimiteenf" string="Âge limite enfant"/>
+                        <field name="poli_agemajorite" string="Âge de la majorité"/>
+                        <field name="poli_nbreenfants" string="Nombre d'enfants"/>
+                        <field name="poli_montantsupenf" string="Montant supplémentaire enfant"/>
+                        <field name="poli_enfantinvalide" string="Enfant invalide"/>
+                        <field name="poli_nbremaxprescript" string="Nombre maximum de prescriptions"/>
+                        <field name="poli_plafondprescript" string="Plafond prescription"/>
+                        <field name="poli_forfaitaccouch" string="Forfait accouchement"/>
+                        <field name="poli_tauxprive" string="Taux privé"/>
+                        <field name="poli_tauxpublic" string="Taux public"/>
+                        <field name="poli_seuilalerte" string="Seuil d'alerte"/>
+                        <field name="poli_activation" string="Activation"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View MUDCI polices search -->
+    <record id="view_mudci_polices_search" model="ir.ui.view">
+        <field name="name">view.mudci.polices.search</field>
+        <field name="model">mudci.polices</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="poli_code" string="Code"/>
+				<field name="poli_standing" string="Standing"/>
+                <field name="poli_libelle" string="Libellé"/>
+                <field name="poli_appdroitadh" string="Applicabilité droit adhérent"/>
+                <field name="poli_droitadhesion" string="Droit adhésion"/>
+                <field name="poli_periodicite" string="Périodicité"/>
+                <field name="poli_retardpaye" string="Retard de payement"/>
+                <field name="poli_montant" string="Montant"/>
+                <field name="poli_delaicarence" string="Délai de carence"/>
+                <field name="poli_plafondind" string="Plafond/Individu"/>
+                <field name="poli_plafondfam" string="Plafond/famille"/>
+                <field name="poli_tauxrembpublic" string="Taux de remboursement au public"/>
+                <field name="poli_tauxrembprive" string="Taux de remboursement au privé"/>
+                <field name="poli_agelimiteadh" string="Âge limite adhérent"/>
+                <field name="poli_agelimiteconj" string="Âge limite conjoint"/>
+                <field name="poli_nbreconjoint" string="Nombre de conjoint"/>
+                <field name="poli_montantsupconj" string="Montant supplémentaire conjoint"/>
+                <field name="poli_agelimiteenf" string="Âge limite enfant"/>
+                <field name="poli_agemajorite" string="Âge de la majorité"/>
+                <field name="poli_nbreenfants" string="Nombre d'enfants"/>
+                <field name="poli_montantsupenf" string="Montant supplémentaire enfant"/>
+                <field name="poli_enfantinvalide" string="Enfant invalide"/>
+                <field name="poli_nbremaxprescript" string="Nombre maximum de prescriptions"/>
+                <field name="poli_plafondprescript" string="Plafond prescription"/>
+                <field name="poli_forfaitaccouch" string="Forfait accouchement"/>
+                <field name="poli_tauxprive" string="Taux privé"/>
+                <field name="poli_tauxpublic" string="Taux public"/>
+                <field name="poli_seuilalerte" string="Seuil d'alerte"/>
+                <field name="poli_activation" string="Activation"/>
+                <field name="create_date" string="Date création"/>
+                <!-- <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Action MUDCI polices -->
+    <record id="action_mudci_polices" model="ir.actions.act_window">
+        <field name="name">Polices</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mudci.polices</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[]</field>
+        <field name="context">{}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_smiling_face">Aucun éléement dans la basé de données</p>
+            <p>Ajouter une police</p>
+        </field>
+    </record>
+
+</odoo>

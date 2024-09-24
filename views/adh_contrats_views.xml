@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View MUDCI contrats View Tree -->
+    <record id="view_mudci_contrats_tree" model="ir.ui.view">
+        <field name="name">view.mudci.contrats.tree</field>
+        <field name="model">mudci.contrats</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="bene_id" string="Bénéficiaire"/>
+                <field name="poli_code" string="Code police"/>
+                <field name="cont_montant" string="Montant"/>
+                <field name="cont_surprime" string="Surprime"/>
+                <field name="cont_ristourne" string="Ristourne"/>
+                <field name="cont_datedebut" string="Date de début"/>
+                <field name="cont_datefin" string="Date de fin"/>
+                <field name="cont_resiliation" string="Date de résiliation"/>
+                <field name="cont_periodicite" string="Périodicité"/>
+                <field name="cont_delaicarence" string="Délai de carence"/>
+                <field name="cont_retardpaye" string="Retard de paiement"/>
+                <field name="cont_activation" string="Activation"/>
+                <field name="create_date" string="Date création"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View MUDCI contrats form -->
+    <record id="view_mudci_contrats_form" model="ir.ui.view">
+        <field name="name">view.mudci.contrats.form</field>
+        <field name="model">mudci.contrats</field>
+        <field name="arch" type="xml">
+            <form string="Contrats">
+                <sheet>
+                    <group>
+                        <field name="bene_id" string="Bénéficiaire"/>
+                        <field name="poli_code" string="Code police"/>
+                        <field name="cont_montant" string="Montant"/>
+                        <field name="cont_surprime" string="Surprime"/>
+                        <field name="cont_ristourne" string="Ristourne"/>
+                        <field name="cont_datedebut" string="Date de début"/>
+                        <field name="cont_datefin" string="Date de fin"/>
+                        <field name="cont_resiliation" string="Date de résiliation"/>
+                        <field name="cont_periodicite" string="Périodicité"/>
+                        <field name="cont_delaicarence" string="Délai de carence"/>
+                        <field name="cont_retardpaye" string="Retard de paiement"/>
+                        <field name="cont_activation" string="Activation"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View MUDCI contrats search -->
+    <record id="view_mudci_contrats_search" model="ir.ui.view">
+        <field name="name">view.mudci.contrats.search</field>
+        <field name="model">mudci.contrats</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="bene_id" string="Bénéficiaire"/>
+                <field name="poli_code" string="Code police"/>
+                <field name="cont_montant" string="Montant"/>
+                <field name="cont_surprime" string="Surprime"/>
+                <field name="cont_ristourne" string="Ristourne"/>
+                <field name="cont_datedebut" string="Date de début"/>
+                <field name="cont_datefin" string="Date de fin"/>
+                <field name="cont_resiliation" string="Date de résiliation"/>
+                <field name="cont_periodicite" string="Périodicité"/>
+                <field name="cont_delaicarence" string="Délai de carence"/>
+                <field name="cont_retardpaye" string="Retard de paiement"/>
+                <field name="cont_activation" string="Activation"/>
+                <field name="create_date" string="Date création"/>
+                <!-- <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Action MUDCI contrats -->
+    <record id="action_mudci_contrats" model="ir.actions.act_window">
+        <field name="name">Contrats</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mudci.contrats</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[]</field>
+        <field name="context">{}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_smiling_face">Aucun éléement dans la basé de données</p>
+            <p>Ajouter un contrat</p>
+        </field>
+    </record>
+
+</odoo>

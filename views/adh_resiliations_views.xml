@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View MUDCI resiliations View Tree -->
+    <record id="view_mudci_resiliations_tree" model="ir.ui.view">
+        <field name="name">view.mudci.resiliations.tree</field>
+        <field name="model">mudci.resiliations</field>
+        <field name="arch" type="xml">
+            <tree string="Résiliations">
+                <field name="cont_id" string="Contrat"/>
+                <field name="resi_motif" string="Motif"/>
+                <field name="create_date" string="Date création"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View MUDCI resiliations form -->
+    <record id="view_mudci_resiliations_form" model="ir.ui.view">
+        <field name="name">view.mudci.resiliations.form</field>
+        <field name="model">mudci.resiliations</field>
+        <field name="arch" type="xml">
+            <form string="Adh_resiliations">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="cont_id" string="Contrat"/>
+                        </group>
+                        <group>
+                            <field name="resi_motif" string="Motif"/>
+                        </group>
+                        <group>
+                            <field name="resi_documentation"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View MUDCI resiliations search -->
+    <record id="view_mudci_resiliations_search" model="ir.ui.view">
+        <field name="name">view.mudci.resiliations.search</field>
+        <field name="model">mudci.resiliations</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="cont_id" string="Contrat"/>
+                <field name="resi_motif" string="Motif"/>
+                <field name="create_date" string="Date création"/>
+                <!-- <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Action MUDCI resiliations -->
+    <record id="action_mudci_resiliations" model="ir.actions.act_window">
+        <field name="name">Résiliations</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mudci.resiliations</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[]</field>
+        <field name="context">{}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_smiling_face">Aucun éléement dans la basé de données</p>
+            <p>Résilier un contrat</p>
+        </field>
+    </record>
+
+</odoo>

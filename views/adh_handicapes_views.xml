@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View MUDCI handicapes View Tree -->
+    <record id="view_mudci_handicapes_tree" model="ir.ui.view">
+        <field name="name">view.handicapes.tree</field>
+        <field name="model">mudci.handicapes</field>
+        <field name="arch" type="xml">
+            <tree string="Ayants droit handicapés">
+                <field name="bene_id" string="Bénéficiaire"/>
+                <field name="hand_activation" string="Activation"/>
+                <field name="create_date" string="Date création"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View MUDCI handicapes form -->
+    <record id="view_mudci_handicapes_form" model="ir.ui.view">
+        <field name="name">view.mudci.handicapes.form</field>
+        <field name="model">mudci.handicapes</field>
+        <field name="arch" type="xml">
+            <form string="Ayants droit handicapés">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="bene_id" string="Bénéficiaire"/>
+                        </group>
+                        <group>
+                            <field name="hand_activation" string="Activation"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View MUDCI handicapes search -->
+    <record id="view_mudci_handicapes_search" model="ir.ui.view">
+        <field name="name">view.mudci.handicapes.search</field>
+        <field name="model">mudci.handicapes</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="bene_id" string="Bénéficiaire"/>
+                <field name="hand_activation" string="Activation"/>
+                <field name="create_date" string="Date création"/>
+                <!-- <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Action MUDCI handicapes -->
+    <record id="action_mudci_handicapes" model="ir.actions.act_window">
+        <field name="name">Ayants droit handicapés</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mudci.handicapes</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[]</field>
+        <field name="context">{}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_smiling_face">Aucun éléement dans la basé de données</p>
+            <p>Ajouter un ayant droit handicapé</p>
+        </field>
+    </record>
+
+</odoo>

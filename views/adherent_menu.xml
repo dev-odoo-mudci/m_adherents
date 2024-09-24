@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_mudci_root" name="Mutuelle Santé" groups="mudci.group_user_mudci" sequence="5" web_icon="mudci,static/description/icon.png" /> <!-- menu root -->
+        <!-- <menuitem id="menu_parametres_category" name="Paramètres" parent="menu_mudci_root" sequence="1"/> -->
+        <menuitem id="menu_adherent_category" name="Adhérents" parent="menu_mudci_root" sequence="2"/>
+            <menuitem id="menu_action_localites" name="Localités" parent="menu_adherent_category" action="action_mudci_localites" sequence="2"/>
+            <menuitem id="menu_action_beneficiaires" name="Bénéficiaires" parent="menu_adherent_category" action="action_mudci_beneficiaires" sequence="1"/>
+            <menuitem id="menu_action_polices" name="Polices" parent="menu_adherent_category" action="action_mudci_polices" sequence="3"/>
+            <menuitem id="menu_action_contrats" name="Contrats" parent="menu_adherent_category" action="action_mudci_contrats" sequence="4"/>
+            <menuitem id="menu_action_scolarises" name="Ayants droit scolarisés" parent="menu_adherent_category" action="action_mudci_scolarises" sequence="5"/>
+            <menuitem id="menu_action_handicapes" name="Ayants droit handicapés" parent="menu_adherent_category" action="action_mudci_handicapes" sequence="6"/>
+            <menuitem id="menu_action_resiliations" name="Résiliations" parent="menu_adherent_category" action="action_mudci_resiliations" sequence="7"/>
+            <menuitem id="menu_action_retraits" name="Rétraits ayant droit" parent="menu_adherent_category" action="action_mudci_retraits" sequence="8"/>
+            <menuitem id="menu_action_suspensions" name="Suspensions" parent="menu_adherent_category" action="action_mudci_suspensions" sequence="9"/>
+            <menuitem id="menu_action_leveesuspens" name="Levées de suspensions" parent="menu_adherent_category" action="action_mudci_leveesuspens" sequence="10"/>
+</odoo>

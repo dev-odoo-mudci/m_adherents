@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View MUDCI retrait View Tree -->
+    <record id="view_mudci_retraits_tree" model="ir.ui.view">
+        <field name="name">view.mudci.retraits.tree</field>
+        <field name="model">mudci.retraits</field>
+        <field name="arch" type="xml">
+            <tree string="Rétrait">
+                <field name="bene_id" string="Bénéficiaire"/>
+                <field name="retr_motif" string="Motif"/>
+                <field name="create_date" string="Date création"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View MUDCI retrait form -->
+    <record id="view_mudci_retraits_form" model="ir.ui.view">
+        <field name="name">view.mudci.retrait.form</field>
+        <field name="model">mudci.retraits</field>
+        <field name="arch" type="xml">
+            <form string="Rétraits">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="bene_id" string="Bénéficiaire"/>
+                        </group>
+                        <group>
+                            <field name="retr_motif" string="Motif"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="retr_documentation" string="Pièce justificative"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View MUDCI retrait search -->
+    <record id="view_mudci_retraits_search" model="ir.ui.view">
+        <field name="name">view.mudci.retraits.search</field>
+        <field name="model">mudci.retraits</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="bene_id" string="Bénéficiaire"/>
+                <field name="retr_motif" string="Motif"/>
+                <field name="create_date" string="Date création"/>
+                <!-- <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Action MUDCI retrait -->
+    <record id="action_mudci_retraits" model="ir.actions.act_window">
+        <field name="name">Rétraits ayant droit</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mudci.retraits</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[]</field>
+        <field name="context">{}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_smiling_face">Aucun éléement dans la basé de données</p>
+            <p>Rétirer un ayant droit</p>
+        </field>
+    </record>
+
+</odoo>

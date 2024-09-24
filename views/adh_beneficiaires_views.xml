@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View MUDCI beneficiaires View Tree -->
+    <record id="view_mudci_beneficiaires_tree" model="ir.ui.view">
+        <field name="name">view.mudci.beneficiaires.tree</field>
+        <field name="model">mudci.beneficiaires</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="bene_matricule" string="Matricule"/>
+                <field name="bene_nomprenoms" string="Nom &amp; Prénoms"/>
+                <!-- <field name="bene_nom" string="Non"/> -->
+                <!-- <field name="bene_prenoms" string="Prénoms"/> -->
+                <field name="bene_mobile1" string="Mobile 1"/>
+                <!-- <field name="bene_mobile2" string="Mobile 2"/> -->
+                <field name="bene_email" string="Email"/>
+                <field name="bene_adresse" string="Adresse"/>
+                <field name="loca_id" string="Localité"/>
+                <field name="bene_codeid" string="Code ID"/>
+                <field name="bene_dateadhesion" string="Date adhésion"/>
+                <field name="bene_statut" string="Statut"/>
+                <field name="bene_idadherent" string="ID adhésion"/>
+                <field name="bene_datenaissance" string="Date de naissance"/>
+                <field name="bene_genre" string="Genre"/>
+                <field name="bene_lieunaissance" string="Lieu de naissance"/>
+                <!-- <field name="bene_perscontact" string="Personne à contact"/> -->
+                <!-- <field name="bene_boitepostal" string="Boite postale"/> -->
+                <!-- <field name="bene_activation" string="Activation"/> -->
+                <!-- <field name="bene_suspension" string="Suspension"/> -->
+                <field name="create_date" string="Date création"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View MUDCI beneficiaires form -->
+    <record id="view_mudci_beneficiaires_form" model="ir.ui.view">
+        <field name="name">view.mudci.beneficiaires.form</field>
+        <field name="model">mudci.beneficiaires</field>
+        <field name="arch" type="xml">
+            <form string="Beneficiaires">
+                <sheet>
+                    <group>
+                        <field name="bene_matricule"/>
+                        <field name="bene_nom" string="Non"/>
+                        <field name="bene_prenoms" string="Prénoms"/>
+                        <field name="bene_mobile1" string="Mobile 1"/>
+                        <field name="bene_mobile2" string="Mobile 2"/>
+                        <field name="bene_email" string="Email"/>
+                        <field name="bene_adresse" string="Adresse"/>
+                        <field name="loca_id" string="Localite"/>
+                        <field name="bene_codeid" string="Code ID"/>
+                        <field name="bene_dateadhesion" string="Date d'adhésion"/>
+                        <field name="bene_statut" string="Statut"/>
+                        <field name="bene_idadherent" string="ID adhésion"/>
+                        <field name="bene_datenaissance" string="Date de naissance"/>
+                        <field name="bene_genre" string="Genre"/>
+                        <field name="bene_lieunaissance" string="Lieu de naissance"/>
+                        <field name="bene_perscontact" string="Personne contact"/>
+                        <field name="bene_boitepostal" string="Boite postale"/>
+                        <field name="bene_activation" string="Activation"/>
+                        <field name="bene_suspension" string="Suspension"/>
+                    </group>
+                    <!-- <group>
+                        <group>
+                            <field name="bene_matricule"/>
+                            <field name="bene_nom" string="Non"/>
+                        </group>
+                        <group>
+                            <field name="bene_prenoms" string="Prénoms"/>
+                            <field name="bene_mobile1" string="Mobile 1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="bene_mobile2" string="Mobile 2"/>
+                            <field name="bene_email" string="Email"/>
+                        </group>
+                        <group>
+                            <field name="bene_adresse" string="Adresse"/>
+                            <field name="loca_id" string="Localite"/>
+                        </group>
+                    </group>
+
+                    <group>
+                        <group>
+                            <field name="bene_codeid" string="Code ID"/>
+                            <field name="bene_dateadhesion" string="Date adhésion"/>
+                        </group>
+                        <group>
+                            <field name="bene_statut" string="Statut"/>
+                            <field name="bene_idadherent" string="ID adhésion"/>
+                        </group>
+                    </group>
+
+                    <group>
+                        <group>
+                            <field name="bene_datenaissance" string="Date de naissance"/>
+                            <field name="bene_genre" string="Genre"/>
+                        </group>
+                        <group>
+                            <field name="bene_lieunaissance" string="Lieu de naissance"/>
+                            <field name="bene_perscontact" string="Personne contact"/>
+                        </group>
+                    </group>
+
+                    <group>
+                        <group>
+                            <field name="bene_boitepostal" string="Boite postale"/>
+                            <field name="bene_activation" string="Activation"/>
+                        </group>
+                        <group>
+                            <field name="bene_suspension" string="Suspension"/>
+                        </group>
+                    </group> -->
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View MUDCI beneficiaires search -->
+    <record id="view_mudci_beneficiaires_search" model="ir.ui.view">
+        <field name="name">view.mudci.beneficiaires.search</field>
+        <field name="model">mudci.beneficiaires</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="bene_matricule"/>
+                <field name="bene_nom" string="Non"/>
+                <field name="bene_prenoms" string="Prénoms"/>
+                <field name="bene_mobile1" string="Mobile 1"/>
+                <field name="bene_mobile2" string="Mobile 2"/>
+                <field name="bene_email" string="Email"/>
+                <field name="bene_adresse" string="Adresse"/>
+                <field name="loca_id" string="Localite"/>
+                <field name="bene_codeid" string="Code ID"/>
+                <field name="bene_dateadhesion" string="Date d'adhésion"/>
+                <field name="bene_statut" string="Statut"/>
+                <field name="bene_idadherent" string="ID adhésion"/>
+                <field name="bene_datenaissance" string="Date de naissance"/>
+                <field name="bene_genre" string="Genre"/>
+                <field name="bene_lieunaissance" string="Lieu de naissance"/>
+                <field name="bene_perscontact" string="Personne contact"/>
+                <field name="bene_boitepostal" string="Boite postale"/>
+                <field name="bene_activation" string="Activation"/>
+                <field name="bene_suspension" string="Suspension"/>
+                <field name="create_date" string="Date création"/>
+                <!-- <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Action MUDCI beneficiaires -->
+    <record id="action_mudci_beneficiaires" model="ir.actions.act_window">
+        <field name="name">Beneficiaires</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mudci.beneficiaires</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[]</field>
+        <field name="context">{}</field> -->
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_smiling_face">Aucun éléement dans la basé de données</p>
+                <p>Ajouter un Bénéficiaire</p>
+            </field>
+        </field>
+    </record>
+
+</odoo>

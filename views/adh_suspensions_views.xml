@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View MUDCI suspensions View Tree -->
+    <record id="view_mudci_suspensions_tree" model="ir.ui.view">
+        <field name="name">view.mudci.suspensions.tree</field>
+        <field name="model">mudci.suspensions</field>
+        <field name="arch" type="xml">
+            <tree string="Suspensions des bénéficiaires">
+                <field name="cont_id" string="Contrat"/>
+                <field name="bene_id" string="Bénéficiaire"/>
+                <field name="susp_motif" string="Motif"/>
+                <field name="susp_debut" string="Date de début"/>
+                <field name="susp_fin" string="Date de fin"/>
+                <field name="susp_statut" string="Statut"/>
+                <field name="create_date" string="Date création"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View MUDCI suspensions form -->
+    <record id="view_mudci_suspensions_form" model="ir.ui.view">
+        <field name="name">view.suspensions.form</field>
+        <field name="model">mudci.suspensions</field>
+        <field name="arch" type="xml">
+            <form string="Suspensions des bénéficiaires">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="cont_id" string="Contrat"/>
+                            <field name="bene_id" string="Bénéficiaire"/>
+                            <field name="susp_motif" string="Motif"/>
+                        </group>
+                        <group>
+                            <field name="susp_debut" string="Date de début"/>
+                            <field name="susp_fin" string="Date de fin"/>
+                            <field name="susp_statut" string="Statut"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="susp_documentation" string="Pièce justificative"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View MUDCI suspensions search -->
+    <record id="view_mudci_suspensions_search" model="ir.ui.view">
+        <field name="name">view.mudci.suspensions.search</field>
+        <field name="model">mudci.suspensions</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="cont_id" string="Contrat"/>
+                <field name="bene_id" string="Bénéficiaire"/>
+                <field name="susp_motif" string="Motif"/>
+                <field name="susp_debut" string="Date de début"/>
+                <field name="susp_fin" string="Date de fin"/>
+                <field name="susp_statut" string="Statut"/>
+                <field name="create_date" string="Date création"/>
+                <!-- <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Action MUDCI suspensions -->
+    <record id="action_mudci_suspensions" model="ir.actions.act_window">
+        <field name="name">Suspensions</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mudci.suspensions</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[]</field>
+        <field name="context">{}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_smiling_face">Aucun éléement dans la basé de données</p>
+            <p>Suspendre un Bénéficiaire</p>
+        </field>
+    </record>
+
+</odoo>

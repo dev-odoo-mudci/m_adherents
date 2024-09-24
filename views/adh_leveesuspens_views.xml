@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View MUDCI leveesuspens View Tree -->
+    <record id="view_mudci_leveesuspens_tree" model="ir.ui.view">
+        <field name="name">view.mudci.leveesuspens.tree</field>
+        <field name="model">mudci.leveesuspens</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="susp_id" string="Suspension"/>
+                <field name="lesu_observation" string="Observation"/>
+                <field name="create_date" string="Date création"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View MUDCI leveesuspens form -->
+    <record id="view_mudci_leveesuspens_form" model="ir.ui.view">
+        <field name="name">view.mudci.leveesuspens.form</field>
+        <field name="model">mudci.leveesuspens</field>
+        <field name="arch" type="xml">
+            <form string="Leveesuspens">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="susp_id" string="Suspension"/>
+                        </group>
+                        <group>
+                            <field name="lesu_observation" string="Observation"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="lesu_documentation" string="Pièce justificative"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View MUDCI leveesuspens search -->
+    <record id="view_mudci_leveesuspens_search" model="ir.ui.view">
+        <field name="name">view.mudci.leveesuspens.search</field>
+        <field name="model">mudci.leveesuspens</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="susp_id" string="Suspension"/>
+                <field name="lesu_observation" string="Observation"/>
+                <field name="create_date" string="Date création"/>
+                <!-- <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Action MUDCI leveesuspens -->
+    <record id="action_mudci_leveesuspens" model="ir.actions.act_window">
+        <field name="name">Levées de suspensions</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mudci.leveesuspens</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[]</field>
+        <field name="context">{}</field> -->
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_smiling_face">Aucun éléement dans la basé de données</p>
+                <p>Levées de suspensions</p>
+            </field>
+        </field>
+    </record>
+
+</odoo>
