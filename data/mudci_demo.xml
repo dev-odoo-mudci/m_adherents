@@ -4,52 +4,52 @@
         <!-- Localté 1 -->
         <record id="localite_1" model="mudci.localites">
             <field name="loca_nom">Abidjan</field>
-            <field name="loca_activation">oui</field>
+            <field name="loca_activation">True</field>
         </record>
         <!-- Localté 2 -->
         <record id="localite_2" model="mudci.localites">
             <field name="loca_nom">Bouaké</field>
-            <field name="loca_activation">oui</field>
+            <field name="loca_activation">True</field>
         </record>
         <!-- Localté 3 -->
         <record id="localite_3" model="mudci.localites">
             <field name="loca_nom">Korhogo</field>
-            <field name="loca_activation">oui</field>
+            <field name="loca_activation">True</field>
         </record>
         <!-- Localté 4 -->
         <record id="localite_4" model="mudci.localites">
             <field name="loca_nom">Daloa</field>
-            <field name="loca_activation">non</field>
+            <field name="loca_activation"></field>
         </record>
         <!-- Localté 5 -->
         <record id="localite_5" model="mudci.localites">
             <field name="loca_nom">Yamoussoukro</field>
-            <field name="loca_activation">oui</field>
+            <field name="loca_activation"></field>
         </record>
         <!-- Localté 6 -->
         <record id="localite_6" model="mudci.localites">
             <field name="loca_nom">Man</field>
-            <field name="loca_activation">oui</field>
+            <field name="loca_activation">True</field>
         </record>
         <!-- Localté 7 -->
         <record id="localite_7" model="mudci.localites">
             <field name="loca_nom">Odienné</field>
-            <field name="loca_activation">non</field>
+            <field name="loca_activation"></field>
         </record>
         <!-- Localté 8 -->
         <record id="localite_8" model="mudci.localites">
             <field name="loca_nom">Boundiali</field>
-            <field name="loca_activation">oui</field>
+            <field name="loca_activation">True</field>
         </record>
         <!-- Localté 9 -->
         <record id="localite_9" model="mudci.localites">
             <field name="loca_nom">Bouaflé</field>
-            <field name="loca_activation">oui</field>
+            <field name="loca_activation">True</field>
         </record>
         <!-- Localté 10 -->
         <record id="localite_10" model="mudci.localites">
             <field name="loca_nom">Grand-Bassam</field>
-            <field name="loca_activation">oui</field>
+            <field name="loca_activation">True</field>
         </record>
 
 
@@ -73,8 +73,8 @@
             <field name="bene_lieunaissance">Dibikro</field>
             <field name="bene_perscontact">05 54 48 45 45</field>
             <field name="bene_boitepostal">BP 216 Yamoussaoukro</field>
-            <field name="bene_activation">oui</field>
-            <field name="bene_suspension">non</field>
+            <field name="bene_activation">True</field>
+            <field name="bene_suspension"></field>
         </record>
         <!-- Bénéficiaire 2 -->
         <record id="beneficiaire_2" model="mudci.beneficiaires">
@@ -95,8 +95,8 @@
             <field name="bene_lieunaissance">Dibikro</field>
             <field name="bene_perscontact">05 54 48 45 45</field>
             <field name="bene_boitepostal">BP 216 Yamoussaoukro</field>
-            <field name="bene_activation">oui</field>
-            <field name="bene_suspension">non</field>
+            <field name="bene_activation">True</field>
+            <field name="bene_suspension"></field>
         </record>
         <!-- Bénéficiaire 3 -->
         <record id="beneficiaire_3" model="mudci.beneficiaires">
@@ -117,8 +117,8 @@
             <field name="bene_lieunaissance">Dibikro</field>
             <field name="bene_perscontact">05 54 48 45 45</field>
             <field name="bene_boitepostal">BP 511 Dropo</field>
-            <field name="bene_activation">oui</field>
-            <field name="bene_suspension">non</field>
+            <field name="bene_activation">True</field>
+            <field name="bene_suspension"></field>
         </record>
         <!-- Bénéficiaire 4 -->
         <record id="beneficiaire_4" model="mudci.beneficiaires">
@@ -139,8 +139,8 @@
             <field name="bene_lieunaissance">Dibikro</field>
             <field name="bene_perscontact">05 54 48 45 45</field>
             <field name="bene_boitepostal">BP 584 Kro</field>
-            <field name="bene_activation">oui</field>
-            <field name="bene_suspension">non</field>
+            <field name="bene_activation">True</field>
+            <field name="bene_suspension"></field>
         </record>
         <!-- Bénéficiaire 5 -->
         <record id="beneficiaire_5" model="mudci.beneficiaires">
@@ -161,8 +161,8 @@
             <field name="bene_lieunaissance">Dibikro</field>
             <field name="bene_perscontact">05 54 48 45 45</field>
             <field name="bene_boitepostal">BP 216 Yamoussaoukro</field>
-            <field name="bene_activation">oui</field>
-            <field name="bene_suspension">non</field>
+            <field name="bene_activation">True</field>
+            <field name="bene_suspension"></field>
         </record>
 
 
@@ -190,14 +190,14 @@
             <field name="poli_agemajorite">21</field>
             <field name="poli_nbreenfants">2</field>
             <field name="poli_montantsupenf">1500</field>
-            <field name="poli_enfantinvalide">non</field>
+            <field name="poli_enfantinvalide"></field>
             <field name="poli_nbremaxprescript">10</field>
             <field name="poli_plafondprescript">15000</field>
             <field name="poli_forfaitaccouch">3000</field>
             <field name="poli_tauxprive">60</field>
             <field name="poli_tauxpublic">70</field>
             <field name="poli_seuilalerte">5</field>
-            <field name="poli_activation">oui</field>
+            <field name="poli_activation">True</field>
         </record>
         <!-- Police 2 -->
         <record id="police_2" model="mudci.polices">
@@ -222,14 +222,14 @@
             <field name="poli_agemajorite">23</field>
             <field name="poli_nbreenfants">3</field>
             <field name="poli_montantsupenf">2000</field>
-            <field name="poli_enfantinvalide">oui</field>
+            <field name="poli_enfantinvalide">True</field>
             <field name="poli_nbremaxprescript">12</field>
             <field name="poli_plafondprescript">20000</field>
             <field name="poli_forfaitaccouch">3500</field>
             <field name="poli_tauxprive">70</field>
             <field name="poli_tauxpublic">75</field>
             <field name="poli_seuilalerte">8</field>
-            <field name="poli_activation">oui</field>
+            <field name="poli_activation">True</field>
         </record>
         <!-- Police 3 -->
         <record id="police_3" model="mudci.polices">
@@ -254,14 +254,14 @@
             <field name="poli_agemajorite">25</field>
             <field name="poli_nbreenfants">4</field>
             <field name="poli_montantsupenf">2500</field>
-            <field name="poli_enfantinvalide">non</field>
+            <field name="poli_enfantinvalide"></field>
             <field name="poli_nbremaxprescript">15</field>
             <field name="poli_plafondprescript">25000</field>
             <field name="poli_forfaitaccouch">4000</field>
             <field name="poli_tauxprive">75</field>
             <field name="poli_tauxpublic">80</field>
             <field name="poli_seuilalerte">10</field>
-            <field name="poli_activation">oui</field>
+            <field name="poli_activation">True</field>
         </record>
         <!-- Police 4 -->
         <record id="police_4" model="mudci.polices">
@@ -286,14 +286,14 @@
             <field name="poli_agemajorite">26</field>
             <field name="poli_nbreenfants">5</field>
             <field name="poli_montantsupenf">3000</field>
-            <field name="poli_enfantinvalide">oui</field>
+            <field name="poli_enfantinvalide">True</field>
             <field name="poli_nbremaxprescript">20</field>
             <field name="poli_plafondprescript">30000</field>
             <field name="poli_forfaitaccouch">5000</field>
             <field name="poli_tauxprive">80</field>
             <field name="poli_tauxpublic">85</field>
             <field name="poli_seuilalerte">12</field>
-            <field name="poli_activation">oui</field>
+            <field name="poli_activation">True</field>
         </record>
         <!-- Police 5 -->
         <record id="police_5" model="mudci.polices">
@@ -318,14 +318,14 @@
             <field name="poli_agemajorite">30</field>
             <field name="poli_nbreenfants">6</field>
             <field name="poli_montantsupenf">3500</field>
-            <field name="poli_enfantinvalide">non</field>
+            <field name="poli_enfantinvalide"></field>
             <field name="poli_nbremaxprescript">25</field>
             <field name="poli_plafondprescript">35000</field>
             <field name="poli_forfaitaccouch">6000</field>
             <field name="poli_tauxprive">85</field>
             <field name="poli_tauxpublic">90</field>
             <field name="poli_seuilalerte">15</field>
-            <field name="poli_activation">oui</field>
+            <field name="poli_activation">True</field>
         </record>
 
 
@@ -342,7 +342,7 @@
             <field name="cont_periodicite">annuelle</field>
             <field name="cont_delaicarence">30</field>
             <field name="cont_retardpaye">0</field>
-            <field name="cont_activation">oui</field>
+            <field name="cont_activation">True</field>
         </record>
         <!-- Contrat 2 -->
         <record id="contrat_2" model="mudci.contrats">
@@ -356,7 +356,7 @@
             <field name="cont_periodicite">mensuelle</field>
             <field name="cont_delaicarence">45</field>
             <field name="cont_retardpaye">2000</field>
-            <field name="cont_activation">non</field>
+            <field name="cont_activation"></field>
         </record>
         <!-- Contrat 3 -->
         <record id="contrat_3" model="mudci.contrats">
@@ -370,7 +370,7 @@
             <field name="cont_periodicite">trimestrielle</field>
             <field name="cont_delaicarence">45</field>
             <field name="cont_retardpaye">2000</field>
-            <field name="cont_activation">oui</field>
+            <field name="cont_activation">True</field>
         </record>
         <!-- Contrat 4 -->
         <record id="contrat_4" model="mudci.contrats">
@@ -384,7 +384,7 @@
             <field name="cont_periodicite">semestrielle</field>
             <field name="cont_delaicarence">45</field>
             <field name="cont_retardpaye">2000</field>
-            <field name="cont_activation">non</field>
+            <field name="cont_activation"></field>
         </record>
         <!-- Contrat 5 -->
         <record id="contrat_5" model="mudci.contrats">
@@ -398,7 +398,7 @@
             <field name="cont_periodicite">semestrielle</field>
             <field name="cont_delaicarence">45</field>
             <field name="cont_retardpaye">2000</field>
-            <field name="cont_activation">non</field>
+            <field name="cont_activation"></field>
         </record>
 
 
@@ -408,35 +408,35 @@
             <field name="bene_id" ref="beneficiaire_1"/>
             <field name="scol_datedebut">2021-09-01</field>
             <field name="scol_datefin">2024-06-30</field>
-            <field name="scol_activation">oui</field>
+            <field name="scol_activation">True</field>
         </record>
         <!-- Enfant scolarisé 2 -->
         <record id="scolarise_2" model="mudci.scolarises">
             <field name="bene_id" ref="beneficiaire_2"/>
             <field name="scol_datedebut">2022-09-01</field>
             <field name="scol_datefin">2025-06-30</field>
-            <field name="scol_activation">non</field>
+            <field name="scol_activation"></field>
         </record>
         <!-- Enfant scolarisé 3 -->
         <record id="scolarise_3" model="mudci.scolarises">
             <field name="bene_id" ref="beneficiaire_3"/>
             <field name="scol_datedebut">2020-09-01</field>
             <field name="scol_datefin">2023-06-30</field>
-            <field name="scol_activation">oui</field>
+            <field name="scol_activation">True</field>
         </record>
         <!-- Enfant scolarisé 4 -->
         <record id="scolarise_4" model="mudci.scolarises">
             <field name="bene_id" ref="beneficiaire_4"/>
             <field name="scol_datedebut">2023-09-01</field>
             <field name="scol_datefin">2026-06-30</field>
-            <field name="scol_activation">oui</field>
+            <field name="scol_activation">True</field>
         </record>
         <!-- Enfant scolarisé 5 -->
         <record id="scolarise_5" model="mudci.scolarises">
             <field name="bene_id" ref="beneficiaire_5"/>
             <field name="scol_datedebut">2021-01-15</field>
             <field name="scol_datefin">2023-12-15</field>
-            <field name="scol_activation">non</field>
+            <field name="scol_activation"></field>
         </record>
 
 
@@ -444,27 +444,27 @@
         <!-- Ayant droit handicapé 1 -->
         <record id="handicape_1" model="mudci.handicapes">
             <field name="bene_id" ref="beneficiaire_1"/>
-            <field name="hand_activation">oui</field>
+            <field name="hand_activation">True</field>
         </record>
         <!-- Ayant droit handicapé 2 -->
         <record id="handicape_2" model="mudci.handicapes">
             <field name="bene_id" ref="beneficiaire_2"/>
-            <field name="hand_activation">non</field>
+            <field name="hand_activation"></field>
         </record>
         <!-- Ayant droit handicapé 3 -->
         <record id="handicape_3" model="mudci.handicapes">
             <field name="bene_id" ref="beneficiaire_3"/>
-            <field name="hand_activation">oui</field>
+            <field name="hand_activation">True</field>
         </record>
         <!-- Ayant droit handicapé 4 -->
         <record id="handicape_4" model="mudci.handicapes">
             <field name="bene_id" ref="beneficiaire_4"/>
-            <field name="hand_activation">oui</field>
+            <field name="hand_activation">True</field>
         </record>
         <!-- Ayant droit handicapé 5 -->
         <record id="handicape_5" model="mudci.handicapes">
             <field name="bene_id" ref="beneficiaire_5"/>
-            <field name="hand_activation">non</field>
+            <field name="hand_activation"></field>
         </record>
 
 
@@ -505,7 +505,7 @@
         <!-- Rétrait 1 -->
         <record id="retrait_1" model="mudci.retraits">
             <field name="bene_id" ref="beneficiaire_1"/>
-            <field name="retr_motif">Retrait pour non-conformité des documents</field>
+            <field name="retr_motif">Retrait pour -conformité des documents</field>
             <field name="retr_dateretrait">2024-01-15</field>
         </record>
         <!-- Rétrait 2 -->
@@ -523,7 +523,7 @@
         <!-- Rétrait 4 -->
         <record id="retrait_4" model="mudci.retraits">
             <field name="bene_id" ref="beneficiaire_4"/>
-            <field name="retr_motif">Retrait pour non-paiement des cotisations</field>
+            <field name="retr_motif">Retrait pour -paiement des cotisations</field>
             <field name="retr_dateretrait">2024-04-10</field>
         </record>
         <!-- Rétrait 5 -->
@@ -625,7 +625,7 @@
         <!-- Levée de suspension 3 -->
         <record id="leveesuspens_3" model="mudci.leveesuspens">
             <field name="susp_id" ref="suspension_3"/>
-            <field name="lesu_observation">Fraude non avérée</field>
+            <field name="lesu_observation">Fraude  avérée</field>
         </record>
         <!-- Levée de suspension 4 -->
         <record id="leveesuspens_4" model="mudci.leveesuspens">

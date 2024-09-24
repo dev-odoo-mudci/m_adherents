@@ -13,7 +13,8 @@ class Handicapes(models.Model):
 
     # hand_id = fields.Integer(string=_("ID de l'ayant droit handicapé"), required=True, readonly=True)
     bene_id = fields.Many2one(string=_("Bénéficiaire"), comodel_name='mudci.beneficiaires', required=True)
-    hand_activation = fields.Selection([('oui', 'Oui'),('non', 'Non')], string=_("Activation"), default='oui', required=True)
+    # hand_activation = fields.Selection([('oui', 'Oui'),('non', 'Non')], string=_("Activation"), default='oui', required=True)
+    hand_activation = fields.Boolean(string=_('Activation'), default=True, required=True,)
 
 
     def _compute_display_name(self):

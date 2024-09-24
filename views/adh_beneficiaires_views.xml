@@ -57,61 +57,9 @@
                         <field name="bene_lieunaissance" string="Lieu de naissance"/>
                         <field name="bene_perscontact" string="Personne contact"/>
                         <field name="bene_boitepostal" string="Boite postale"/>
-                        <field name="bene_activation" string="Activation"/>
-                        <field name="bene_suspension" string="Suspension"/>
+                        <!-- <field name="bene_activation" string="Activation"/>
+                        <field name="bene_suspension" string="Suspension"/> -->
                     </group>
-                    <!-- <group>
-                        <group>
-                            <field name="bene_matricule"/>
-                            <field name="bene_nom" string="Non"/>
-                        </group>
-                        <group>
-                            <field name="bene_prenoms" string="Prénoms"/>
-                            <field name="bene_mobile1" string="Mobile 1"/>
-                        </group>
-                    </group>
-                    <group>
-                        <group>
-                            <field name="bene_mobile2" string="Mobile 2"/>
-                            <field name="bene_email" string="Email"/>
-                        </group>
-                        <group>
-                            <field name="bene_adresse" string="Adresse"/>
-                            <field name="loca_id" string="Localite"/>
-                        </group>
-                    </group>
-
-                    <group>
-                        <group>
-                            <field name="bene_codeid" string="Code ID"/>
-                            <field name="bene_dateadhesion" string="Date adhésion"/>
-                        </group>
-                        <group>
-                            <field name="bene_statut" string="Statut"/>
-                            <field name="bene_idadherent" string="ID adhésion"/>
-                        </group>
-                    </group>
-
-                    <group>
-                        <group>
-                            <field name="bene_datenaissance" string="Date de naissance"/>
-                            <field name="bene_genre" string="Genre"/>
-                        </group>
-                        <group>
-                            <field name="bene_lieunaissance" string="Lieu de naissance"/>
-                            <field name="bene_perscontact" string="Personne contact"/>
-                        </group>
-                    </group>
-
-                    <group>
-                        <group>
-                            <field name="bene_boitepostal" string="Boite postale"/>
-                            <field name="bene_activation" string="Activation"/>
-                        </group>
-                        <group>
-                            <field name="bene_suspension" string="Suspension"/>
-                        </group>
-                    </group> -->
                 </sheet>
             </form>
         </field>

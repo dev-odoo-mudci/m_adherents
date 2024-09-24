@@ -33,14 +33,16 @@ class Polices(models.Model):
     poli_agemajorite = fields.Integer(string=_('Âge de la majorité'), required=True)
     poli_nbreenfants = fields.Integer(string=_('Nombre d\'enfants'), required=True)
     poli_montantsupenf = fields.Float(string=_('Montant supplémentaire enfant'), required=True)
-    poli_enfantinvalide = fields.Selection([('oui', 'Oui'),('non', 'Non')], string=_('Enfant invalide'), required=True)
+    # poli_enfantinvalide = fields.Selection([('oui', 'Oui'),('non', 'Non')], string=_('Enfant invalide'), required=True)
+    poli_enfantinvalide = fields.Boolean(string=_('Enfant invalide'), default=True, required=True,)
     poli_nbremaxprescript = fields.Integer(string=_('Nombre maximum de prescriptions'), required=True)
     poli_plafondprescript = fields.Float(string=_('Plafond prescription'), required=True)
     poli_forfaitaccouch = fields.Float(string=_('Forfait accouchement'), required=True)
     poli_tauxprive = fields.Integer(string=_('Taux privé'), required=True)
     poli_tauxpublic = fields.Integer(string=_('Taux public'), required=True)
     poli_seuilalerte = fields.Integer(string=_('Seuil d\'alerte'), required=True)
-    poli_activation = fields.Selection([('oui', 'Oui'),('non', 'Non')], string=_('Activation'), default='oui', required=True)
+    poli_activation = fields.Boolean(string=_('Activation'), default=True, required=True,)
+    # poli_activation = fields.Selection([('oui', 'Oui'),('non', 'Non')], string=_('Activation'), default='oui', required=True)
 
 
     def _compute_display_name(self):

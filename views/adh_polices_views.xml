@@ -77,7 +77,7 @@
                         <field name="poli_tauxprive" string="Taux privé"/>
                         <field name="poli_tauxpublic" string="Taux public"/>
                         <field name="poli_seuilalerte" string="Seuil d'alerte"/>
-                        <field name="poli_activation" string="Activation"/>
+                        <!-- <field name="poli_activation" string="Activation"/> -->
                     </group>
                 </sheet>
             </form>
@@ -118,7 +118,7 @@
                 <field name="poli_tauxprive" string="Taux privé"/>
                 <field name="poli_tauxpublic" string="Taux public"/>
                 <field name="poli_seuilalerte" string="Seuil d'alerte"/>
-                <field name="poli_activation" string="Activation"/>
+                <!-- <field name="poli_activation" string="Activation"/> -->
                 <field name="create_date" string="Date création"/>
                 <!-- <group expand="1" string="Group By">
                     <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>

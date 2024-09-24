@@ -10,7 +10,7 @@
                 <field name="bene_id" string="Bénéficiaire"/>
                 <field name="scol_datedebut" string="Date de début"/>
                 <field name="scol_datefin" string="Date de fin"/>
-                <field name="scol_activation" string="Activation"/>
+                <!-- <field name="scol_activation" string="Activation"/> -->
                 <field name="create_date" string="Date création"/>
             </tree>
         </field>
@@ -30,7 +30,7 @@
                         </group>
                         <group>
                             <field name="scol_datefin" string="Date de fin"/>
-                            <field name="scol_activation" string="Activation"/>
+                            <!-- <field name="scol_activation" string="Activation"/> -->
                         </group>
                     </group>
                 </sheet>
@@ -47,7 +47,7 @@
                 <field name="bene_id" string="Bénéficiaire"/>
                 <field name="scol_datedebut" string="Date de début"/>
                 <field name="scol_datefin" string="Date de fin"/>
-                <field name="scol_activation" string="Activation"/>
+                <!-- <field name="scol_activation" string="Activation"/> -->
                 <field name="create_date" string="Date création"/>
                 <!-- <group expand="1" string="Group By">
                     <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>

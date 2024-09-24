@@ -18,7 +18,7 @@
                 <field name="cont_periodicite" string="Périodicité"/>
                 <field name="cont_delaicarence" string="Délai de carence"/>
                 <field name="cont_retardpaye" string="Retard de paiement"/>
-                <field name="cont_activation" string="Activation"/>
+                <!-- <field name="cont_activation" string="Activation"/> -->
                 <field name="create_date" string="Date création"/>
             </tree>
         </field>
@@ -43,7 +43,7 @@
                         <field name="cont_periodicite" string="Périodicité"/>
                         <field name="cont_delaicarence" string="Délai de carence"/>
                         <field name="cont_retardpaye" string="Retard de paiement"/>
-                        <field name="cont_activation" string="Activation"/>
+                        <!-- <field name="cont_activation" string="Activation"/> -->
                     </group>
                 </sheet>
             </form>
@@ -67,7 +67,7 @@
                 <field name="cont_periodicite" string="Périodicité"/>
                 <field name="cont_delaicarence" string="Délai de carence"/>
                 <field name="cont_retardpaye" string="Retard de paiement"/>
-                <field name="cont_activation" string="Activation"/>
+                <!-- <field name="cont_activation" string="Activation"/> -->
                 <field name="create_date" string="Date création"/>
                 <!-- <group expand="1" string="Group By">
                     <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>

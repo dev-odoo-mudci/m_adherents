@@ -13,7 +13,8 @@ class Localites(models.Model):
 
     # name = fields.Char('Name')
     loca_nom = fields.Char(string=_('Nom localité'), required=True,) #size=40
-    loca_activation = fields.Selection(string=_('Activation'), selection=[('oui', 'Oui'),('non', 'Non'),], required=True, default='oui',)
+    loca_activation = fields.Boolean(string=_('Activation'), default=True, required=True,)
+    # loca_activation = fields.Selection(string=_('Activation'), selection=[('oui', 'Oui'),('non', 'Non'),], required=True, default='oui',)
 
     # _sql_constraints = [
     #     ('nom_length_check', 'CHECK(char_length(nom) <= 40)', 'Le nom de la localité ne peut pas dépasser 40 caractères.'),

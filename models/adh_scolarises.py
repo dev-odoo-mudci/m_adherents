@@ -16,6 +16,7 @@ class Scolarises(models.Model):
     scol_datedebut = fields.Date(string=_('Date de début'), required=True)
     scol_datefin = fields.Date(string=_('Date de fin'), required=True)
     scol_activation = fields.Selection([('oui', 'Oui'),('non', 'Non')], string=_('Activation'), default='oui', required=True)
+    scol_activation = fields.Boolean(string=_('Activation'), default=True, required=True,)
 
     def _compute_display_name(self):
         for record in self:

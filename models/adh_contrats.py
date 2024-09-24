@@ -23,7 +23,8 @@ class Contrats(models.Model):
     cont_periodicite = fields.Selection([('mensuelle', 'Mensuelle'), ('trimestrielle', 'Trimestrielle'), ('semestrielle', 'Semestrielle'), ('annuelle', 'Annuelle')], string=_('Périodicité'), required=True)
     cont_delaicarence = fields.Integer(string=_('Délai de carence'), required=True)
     cont_retardpaye = fields.Float(string=_('Retard de paiement'), required=True)
-    cont_activation = fields.Selection([('oui', 'Oui'),('non', 'Non')], string=_('Activation'), default='oui', required=True)
+    cont_activation = fields.Boolean(string=_('Activation'), default=True, required=True,)
+    # cont_activation = fields.Selection([('oui', 'Oui'),('non', 'Non')], string=_('Activation'), default='oui', required=True)
 
     def _compute_display_name(self):
         for record in self:

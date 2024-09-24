@@ -21,13 +21,13 @@
         <field name="model">mudci.localites</field>
         <field name="arch" type="xml">
             <form string="Localites">
-                <sheet>
+                <sheet >
                     <group>
                         <group>
                             <field name="loca_nom" placeholder="Nom localité"/>
                         </group>
                         <group>
-                            <field name="loca_activation" string="Activation" widget="selection" />
+                            <field name="loca_activation" string="Activation"/>
                         </group>
                     </group>
                 </sheet>

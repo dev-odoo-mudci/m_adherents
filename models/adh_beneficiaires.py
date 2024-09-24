@@ -30,8 +30,10 @@ class Beneficiaires(models.Model):
     bene_mobile2 = fields.Char(string=_('Mobile 2'), default='', size=20)
     bene_email = fields.Char(string=_('Email'), default='', size=60)
     bene_boitepostal = fields.Char(string=_('Boite postal'), default='', size=30)
-    bene_activation = fields.Selection(string=_('Activation'), selection=[('oui', 'Oui'),('non', 'Non'),], required=True, default='oui',)
-    bene_suspension = fields.Selection(string=_('Suspension'), selection=[('oui', 'Oui'),('non', 'Non'),], required=True, default='non',)
+    # bene_activation = fields.Selection(string=_('Activation'), selection=[('oui', 'Oui'),('non', 'Non'),], required=True, default='oui',)
+    # bene_suspension = fields.Selection(string=_('Suspension'), selection=[('oui', 'Oui'),('non', 'Non'),], required=True, default='non',)
+    bene_activation = fields.Boolean(string=_('Activation'), default=True, required=True,)
+    bene_suspension = fields.Boolean(string=_('Suspension'), default=True, required=False,)
 
     def _compute_display_name(self):
         for record in self:
